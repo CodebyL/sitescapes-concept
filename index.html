@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sitescapes Landscape Design Inc. (website concept)</title>
+<meta name="description" content="Website concept for Sitescapes Landscape Design Inc. of Stony Brook, NY: landscape design and construction for North Shore homes, rated 5.0 on Google.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --moss:#4a5a38;--moss-d:#36432a;--moss-l:#8e9c72;--slate:#36434b;--slate-d:#232d33;--lime:#eee9df;--lime-2:#e3dccd;--paper:#f7f4ee;--ink:#1d2320;--muted:#545c58;--rule:rgba(29,35,32,.18);--ochre:#b2874a;
+ --s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:32px;--s6:48px;--s7:72px;--s8:112px;
+ --wrap:1280px;
+ --serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;--sans:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-style:normal;font-weight:500;line-height:1;margin:0;letter-spacing:-.01em}
+em,i{font-style:normal}
+p{margin:0 0 var(--s3)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--s6)}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:var(--s2) var(--s3);z-index:100}
+.skip:focus{left:var(--s3);top:var(--s3)}
+.label{font-family:var(--sans);font-size:.74rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.folio{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--ink);padding-top:var(--s2);margin-bottom:var(--s6)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:52px;padding:0 var(--s5);font:500 .82rem var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;border-radius:0;transition:background .25s,color .25s}
+.btn-moss{background:var(--moss);color:#fff}.btn-moss:hover{background:var(--moss-d)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-light{border-color:rgba(255,255,255,.6);color:#fff;background:transparent}.btn-light:hover{background:#fff;color:var(--slate-d)}
+
+.concept{background:var(--slate-d);color:#e4e8ea;font-size:.8rem;text-align:center;padding:var(--s2) var(--s3);letter-spacing:.02em}
+.concept a{color:#fff;font-weight:600}
+
+header.site{border-bottom:1px solid var(--rule);background:var(--paper);position:sticky;top:0;z-index:40}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:72px;gap:var(--s4)}
+nav#nav ul{list-style:none;margin:0;padding:0;display:flex;gap:var(--s4)}
+nav#nav a{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;display:inline-block;padding:var(--s3) 0;min-height:44px}
+nav#nav a:hover{color:var(--moss)}
+.wordmark{font-family:var(--serif);font-size:1.7rem;font-weight:600;text-decoration:none;letter-spacing:.06em;text-align:center;line-height:1}
+.wordmark small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:var(--s1);font-weight:500}
+.hd-r{display:flex;justify-content:flex-end;align-items:center;gap:var(--s3)}
+.hd-tel{font-size:.95rem;font-weight:500;text-decoration:none;letter-spacing:.04em;display:inline-flex;align-items:center;min-height:44px;gap:var(--s2)}
+.hd-tel svg{width:16px;height:16px}
+.menu-btn{display:none;min-width:48px;height:48px;background:transparent;border:1px solid var(--ink);cursor:pointer;font:500 .72rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:0 var(--s3);color:var(--ink)}
+
+/* cover */
+.cover{padding:var(--s6) 0 var(--s7)}
+.cover-top{display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:var(--s2);margin-bottom:var(--s5)}
+.cover-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--s6);align-items:start}
+.cover h1{font-size:clamp(3rem,6.4vw,6.4rem);font-weight:500;line-height:.92;letter-spacing:-.02em;color:var(--ink)}
+.cover h1 span{display:block;color:var(--moss)}
+.cover .dek{font-size:1.2rem;color:var(--muted);margin-top:var(--s5);max-width:28em}
+.cover .dek::first-letter{font-family:var(--serif);float:left;font-size:4.2rem;line-height:.82;padding:var(--s1) var(--s2) 0 0;color:var(--moss)}
+.cover-actions{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s5)}
+.plate{margin:0;background:var(--lime);padding:var(--s4);position:relative}
+.plate svg{display:block;width:100%;height:auto}
+.plate figcaption{display:flex;justify-content:space-between;gap:var(--s3);margin-top:var(--s3);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.plate .draw-in path.trace{stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 3.2s ease forwards .3s}
+@keyframes trace{to{stroke-dashoffset:0}}
+
+/* colophon proof */
+.colophon{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.colophon .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr}
+.colophon .c{padding:var(--s4) var(--s4) var(--s4) 0}
+.colophon .c + .c{border-left:1px solid var(--rule);padding-left:var(--s4)}
+.colophon b{display:block;font-family:var(--serif);font-size:2rem;font-weight:500;line-height:1.1}
+.big-rate{display:flex;align-items:center;gap:var(--s3)}
+.big-rate b{font-size:3.4rem}
+.stars{display:flex;gap:3px}
+.stars svg{width:16px;height:16px}
+
+/* feature spread */
+.spread{padding:var(--s8) 0}
+.spread-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--s5)}
+.spread h2{grid-column:1/8;font-size:clamp(2.6rem,4.6vw,4.4rem)}
+.spread .intro{grid-column:8/13;align-self:end;color:var(--muted)}
+.feature{grid-column:span 6;border-top:1px solid var(--ink);padding-top:var(--s4);margin-top:var(--s6)}
+.feature .num{font-family:var(--serif);font-size:5rem;line-height:.8;color:var(--moss-l);display:block;margin-bottom:var(--s4)}
+.feature h3{font-size:2.3rem;margin-bottom:var(--s3)}
+.feature p{color:var(--muted);columns:2;column-gap:var(--s5)}
+.feature ul{list-style:none;padding:0;margin:var(--s4) 0 0;border-top:1px solid var(--rule)}
+.feature li{padding:var(--s2) 0;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:var(--s3);font-size:.95rem}
+.feature li span{color:var(--muted)}
+.pull{grid-column:3/11;margin:var(--s7) 0 0;text-align:center;font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;color:var(--slate)}
+.pull small{display:block;font-family:var(--sans);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:var(--s3)}
+
+/* journey tool */
+.journey{background:var(--lime);padding:var(--s8) 0}
+.j-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--s6);align-items:start}
+.journey h2{font-size:clamp(2.4rem,4vw,3.8rem);margin:var(--s3) 0 var(--s4)}
+.steps{list-style:none;margin:var(--s5) 0 0;padding:0;border-top:1px solid var(--ink)}
+.steps button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:48px 1fr;gap:var(--s3);width:100%;padding:var(--s3) 0;border-bottom:1px solid var(--rule);cursor:pointer;min-height:56px;align-items:baseline}
+.steps button:focus-visible{outline:2px solid var(--ochre);outline-offset:2px}
+.steps .sn{font-family:var(--serif);font-size:1.6rem;color:var(--moss-l);line-height:1}
+.steps .st{font-family:var(--serif);font-size:1.6rem;line-height:1.1}
+.steps .sd{grid-column:2;display:none;color:var(--muted);font-size:1rem;margin-top:var(--s2)}
+.steps button[aria-current="step"] .sn{color:var(--moss)}
+.steps button[aria-current="step"] .sd{display:block}
+.steps button.past .sn{color:var(--moss)}
+.j-nav{display:flex;gap:var(--s3);margin-top:var(--s4)}
+.j-plan{background:var(--paper);padding:var(--s4);position:sticky;top:96px}
+.j-plan svg{display:block;width:100%;height:auto}
+.j-plan .lyr{opacity:0;transform:translateY(6px);transition:opacity .7s ease,transform .7s ease}
+.j-plan .lyr.on{opacity:1;transform:none}
+.j-cap{display:flex;justify-content:space-between;gap:var(--s3);margin-top:var(--s3);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.meter{height:2px;background:var(--rule);margin-top:var(--s3);position:relative}
+.meter i{position:absolute;left:0;top:0;bottom:0;background:var(--moss);transition:width .5s}
+.sample-tag{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);border-bottom:1px solid var(--moss);padding-bottom:2px}
+
+/* drone add-on */
+.drone{background:var(--slate-d);color:#eef1f2;padding:var(--s8) 0}
+.drone .label{color:#b8c3c8}
+.d-head{display:grid;grid-template-columns:7fr 5fr;gap:var(--s6);align-items:end;margin-bottom:var(--s6)}
+.drone h2{font-size:clamp(2.4rem,4.2vw,4rem);margin-top:var(--s3)}
+.d-head p{color:#c7d0d4}
+.viewport{position:relative;overflow:hidden;aspect-ratio:16/9;background:#2c3a2b;border:1px solid rgba(255,255,255,.18)}
+.viewport svg.ground{position:absolute;inset:0;width:100%;height:100%}
+.hud{position:absolute;inset:0;pointer-events:none;font-family:"Jost",ui-monospace,Menlo,monospace;font-size:.78rem;letter-spacing:.14em;color:#f4f6f2;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.hud .corner{position:absolute;width:36px;height:36px;border:2px solid rgba(255,255,255,.85)}
+.hud .tl{top:16px;left:16px;border-right:0;border-bottom:0}.hud .tr{top:16px;right:16px;border-left:0;border-bottom:0}
+.hud .bl{bottom:16px;left:16px;border-right:0;border-top:0}.hud .br{bottom:16px;right:16px;border-left:0;border-top:0}
+.hud .cross{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px}
+.hud .row1>span,.hud .row2>span{background:rgba(24,31,35,.72);padding:2px 8px}
+.hud .row1{position:absolute;top:24px;left:64px;right:64px;display:flex;justify-content:space-between;gap:var(--s3)}
+.hud .row2{position:absolute;bottom:24px;left:64px;right:64px;display:flex;justify-content:space-between;gap:var(--s3)}
+.rec{display:inline-flex;align-items:center;gap:var(--s2)}
+.rec::before{content:"";width:10px;height:10px;border-radius:50%;background:#e0503c;animation:blink 1.2s steps(2) infinite}
+.paused .rec::before{animation:none;background:#9aa4a8}
+@keyframes blink{50%{opacity:.2}}
+.d-ctrl{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center;justify-content:space-between;margin-top:var(--s4)}
+.d-ctrl .btn{min-width:150px}
+.d-specs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:var(--s6);border-top:1px solid rgba(255,255,255,.3)}
+.d-specs div{padding:var(--s4) var(--s4) 0 0}
+.d-specs div + div{border-left:1px solid rgba(255,255,255,.15);padding-left:var(--s4)}
+.d-specs b{display:block;font-family:var(--serif);font-size:1.5rem;font-weight:500;margin-bottom:var(--s1)}
+.d-specs span{color:#c7d0d4;font-size:.95rem}
+.price{font-family:var(--serif);font-size:3.6rem;line-height:1}
+.sample-note{font-size:.9rem;color:#c7d0d4;border-left:2px solid var(--ochre);padding-left:var(--s3);margin-top:var(--s4)}
+
+/* rating feature */
+.rating{padding:var(--s8) 0;text-align:center}
+.rating .r-num{font-family:var(--serif);font-size:clamp(7rem,16vw,14rem);line-height:.85;color:var(--moss);font-weight:500}
+.rating p{max-width:36em;margin:var(--s4) auto 0;color:var(--muted)}
+.rating .stars{justify-content:center;margin-top:var(--s4)}
+.rating .stars svg{width:24px;height:24px}
+
+/* visit */
+.visit{background:var(--lime);padding:var(--s8) 0}
+.v-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--s5)}
+.visit h2{grid-column:1/6;font-size:clamp(2.4rem,4vw,3.8rem)}
+.v-cols{grid-column:6/13;display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
+.v-cols h3{font-size:1.5rem;margin-bottom:var(--s2);border-bottom:1px solid var(--ink);padding-bottom:var(--s2)}
+.v-cols p{color:var(--muted)}
+.v-cols a.tel{font-family:var(--serif);font-size:1.9rem;text-decoration:none;color:var(--ink);display:inline-block;min-height:44px}
+.hours{width:100%;border-collapse:collapse;font-size:1rem}
+.hours td{padding:var(--s2) 0;border-bottom:1px solid var(--rule)}
+.hours td+td{text-align:right}
+
+/* contact */
+.contact{padding:var(--s8) 0}
+.c-grid{display:grid;grid-template-columns:5fr 7fr;gap:var(--s7)}
+.contact h2{font-size:clamp(2.4rem,4vw,3.8rem);margin:var(--s3) 0 var(--s4)}
+.contact .lede{color:var(--muted)}
+.form .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5) var(--s4)}
+.field{display:flex;flex-direction:column;gap:var(--s2)}
+.field.full{grid-column:1/-1}
+.field>label,.field legend{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.field input,.field textarea,.field select{font:inherit;font-size:1.05rem;border:0;border-bottom:1px solid var(--ink);background:transparent;padding:var(--s2) 0;min-height:48px;border-radius:0;color:var(--ink)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-bottom:2px solid var(--moss)}
+fieldset.field{border:0;padding:0;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s2)}
+.chips label{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s3);border:1px solid var(--rule);cursor:pointer;font-size:.95rem}
+.chips input{position:absolute;opacity:0}
+.chips label:has(input:checked){background:var(--moss);color:#fff;border-color:var(--moss)}
+.chips label:has(input:focus-visible){outline:2px solid var(--ochre);outline-offset:2px}
+.msg{display:none;color:#9b2c1f;font-size:.85rem}
+.field.err .msg{display:block}
+.field.err input,.field.err select{border-bottom-color:#9b2c1f}
+.demo-note{font-size:.85rem;color:var(--muted);margin-top:var(--s3)}
+.done{border-top:1px solid var(--ink);padding:var(--s5) 0}
+.done h3{font-size:2.4rem;margin-bottom:var(--s3)}
+.done:focus{outline:none}
+
+footer{background:var(--ink);color:#cfd5d2;padding:var(--s7) 0 var(--s6);font-size:.95rem}
+.f-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:var(--s6);align-items:start}
+footer .wordmark{color:#fff;text-align:left;font-size:2.4rem;display:block}
+footer h4{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#fff;margin:0 0 var(--s3);font-weight:500}
+footer a{color:#fff}
+footer p{margin:0 0 var(--s2)}
+.disc{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.15);font-size:.86rem;color:#aab3af;max-width:72em}
+.sticky-call{display:none}
+
+@media (max-width:1060px){
+ .cover-grid,.j-grid,.c-grid,.d-head{grid-template-columns:1fr}
+ .j-plan{position:static;order:-1}
+ .spread h2,.spread .intro{grid-column:1/-1}
+ .feature{grid-column:1/-1}
+ .pull{grid-column:1/-1}
+ .visit h2,.v-cols{grid-column:1/-1}
+ .colophon .wrap{grid-template-columns:1fr 1fr}
+ .colophon .c:nth-child(3){border-left:0;padding-left:0}
+ .colophon .c:nth-child(n+3){border-top:1px solid var(--rule)}
+ .d-specs{grid-template-columns:1fr 1fr}
+ .d-specs div:nth-child(3){border-left:0;padding-left:0}
+}
+@media (max-width:900px){
+ .hd{grid-template-columns:auto 1fr auto}
+ .wordmark{text-align:left;grid-column:1;grid-row:1}
+ nav#nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--ink)}
+ nav#nav.open{display:block}
+ nav#nav ul{flex-direction:column;gap:0;padding:var(--s2) var(--s4) var(--s4)}
+ nav#nav a{display:block;border-bottom:1px solid var(--rule)}
+ .hd-r{grid-column:3}
+ .menu-btn{display:inline-block}
+ .f-top{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+ body{font-size:17px}
+ .wrap{padding:0 var(--s3)}
+ .hd-tel{display:none}
+ .wordmark{font-size:1.35rem}
+ .wordmark small{letter-spacing:.16em;white-space:nowrap;font-size:.56rem}
+ .colophon b{font-size:1.5rem}
+ .big-rate b{font-size:2.4rem}
+ .big-rate{flex-wrap:wrap;gap:var(--s1)}
+ .colophon .c{padding-right:var(--s3)}
+ .colophon .c + .c{padding-left:var(--s3)}
+ .colophon .c:nth-child(3){padding-left:0}
+ .cover-top span:last-child{display:none}
+ .feature p{columns:1}
+ .v-cols{grid-template-columns:1fr}
+ .form .fgrid{grid-template-columns:1fr}
+ .d-specs{grid-template-columns:1fr}
+ .d-specs div + div{border-left:0;padding-left:0}
+ .viewport{aspect-ratio:4/5}
+ .hud{font-size:.66rem}
+ .hud .row1,.hud .row2{left:28px;right:28px}
+ .hud .row1{top:60px}.hud .row2{bottom:60px}
+ .hud .hide-s{display:none}
+ .sticky-call{display:flex;position:fixed;left:var(--s3);right:var(--s3);bottom:var(--s3);z-index:60;min-height:56px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+ footer{padding-bottom:112px}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .plate .draw-in path.trace{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept">Website concept by <a href="https://www.lisettecolon.com">Lisette Colon</a>. A sample, not the official Sitescapes Landscape Design Inc. site.</div>
+
+<!-- shared garden plan, drawn once and reused -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+ <defs>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#d9d2c3"/><line x1="0" y1="0" x2="0" y2="8" stroke="#a49c8c" stroke-width="1.2"/></pattern>
+  <pattern id="pavers" width="24" height="16" patternUnits="userSpaceOnUse"><rect width="24" height="16" fill="#d8cfbd"/><path d="M0 0H24M0 8H24M0 0V8M12 8V16" stroke="#b7ad98" stroke-width="1"/></pattern>
+  <pattern id="gravel" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#e4dccb"/><circle cx="2" cy="3" r=".9" fill="#b9ae98"/><circle cx="7" cy="7" r=".8" fill="#b9ae98"/></pattern>
+  <clipPath id="lawnclip"><ellipse cx="500" cy="520" rx="200" ry="100"/></clipPath>
+  <g id="L-site">
+   <rect x="20" y="20" width="960" height="660" fill="#ece6da"/>
+   <rect x="40" y="40" width="920" height="620" fill="none" stroke="#36434b" stroke-width="2" stroke-dasharray="14 8"/>
+   <rect x="300" y="40" width="400" height="150" fill="url(#hatch)" stroke="#36434b" stroke-width="2.5"/>
+   <rect x="700" y="40" width="120" height="100" fill="url(#hatch)" stroke="#36434b" stroke-width="2.5"/>
+   <g fill="none" stroke="#5b6a4a" stroke-width="2"><circle cx="140" cy="140" r="78"/><circle cx="870" cy="240" r="70"/><circle cx="880" cy="580" r="58"/></g>
+   <g fill="#5b6a4a"><circle cx="140" cy="140" r="5"/><circle cx="870" cy="240" r="5"/><circle cx="880" cy="580" r="5"/></g>
+   <g font-family="Jost,system-ui,sans-serif" font-size="13" letter-spacing="3" fill="#36434b"><text x="500" y="122" text-anchor="middle">RESIDENCE</text></g>
+  </g>
+  <g id="L-plan" fill="none" stroke="#36434b" stroke-width="1.6">
+   <rect x="330" y="190" width="340" height="100" stroke-dasharray="6 5"/>
+   <rect x="480" y="290" width="40" height="130" stroke-dasharray="6 5"/>
+   <ellipse cx="500" cy="520" rx="200" ry="100" stroke-dasharray="6 5"/>
+   <path d="M330 270 C 230 300, 150 380, 170 470 S 230 600, 210 660" stroke-width="22" stroke="#cfc6b3" stroke-dasharray="0"/>
+   <path d="M60 250 C 120 240, 220 250, 280 300 C 200 360, 110 400, 100 520 C 95 590, 120 640, 140 650 L 60 650 Z" stroke-dasharray="4 6"/>
+   <path d="M720 330 L 940 330 L 940 650 L 640 650 C 700 610, 740 560, 720 480 Z" stroke-dasharray="4 6"/>
+   <rect x="755" y="350" width="130" height="90" stroke-dasharray="6 5"/>
+   <path d="M300 590 A 230 120 0 0 0 700 590" stroke-dasharray="6 5"/>
+   <g stroke="#b2874a" stroke-width="1" stroke-dasharray="2 4"><path d="M500 190 V 660"/><path d="M40 520 H 960"/></g>
+  </g>
+  <g id="L-plants">
+   <circle cx="76" cy="464" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="79" cy="417" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="181" cy="274" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="71" cy="338" r="16" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M63 338H79M71 330V346" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="124" cy="308" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="93" cy="446" r="13" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="74" cy="542" r="24" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <path d="M62 542H86M74 530V554" stroke="#36432a" stroke-width="1" opacity=".6"/>
+   <circle cx="97" cy="297" r="13" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="74" cy="277" r="16" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M66 277H82M74 269V285" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="96" cy="386" r="16" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M88 386H104M96 378V394" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="60" cy="311" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="195" cy="309" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="65" cy="630" r="20" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M55 630H75M65 620V640" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="133" cy="339" r="20" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M123 339H143M133 329V349" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="66" cy="486" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="172" cy="349" r="16" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M164 349H180M172 341V357" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="91" cy="603" r="13" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="125" cy="634" r="20" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M115 634H135M125 624V644" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="154" cy="279" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="119" cy="251" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="80" cy="577" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="205" cy="276" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="220" cy="332" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="122" cy="391" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="114" cy="276" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="65" cy="251" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="85" cy="499" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="234" cy="262" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="61" cy="446" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="122" cy="604" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="63" cy="592" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="162" cy="307" r="13" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="154" cy="254" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="102" cy="322" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="264" cy="289" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="115" cy="577" r="13" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="92" cy="479" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="63" cy="391" r="16" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M55 391H71M63 383V399" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="686" cy="643" r="24" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <path d="M674 643H698M686 631V655" stroke="#5b6a4a" stroke-width="1" opacity=".6"/>
+   <circle cx="786" cy="344" r="13" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="929" cy="382" r="16" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <path d="M921 382H937M929 374V390" stroke="#5b6a4a" stroke-width="1" opacity=".6"/>
+   <circle cx="927" cy="486" r="16" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M919 486H935M927 478V494" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="872" cy="599" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="834" cy="444" r="11" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="788" cy="490" r="11" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="821" cy="530" r="13" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="895" cy="483" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="794" cy="465" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="772" cy="543" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="881" cy="546" r="16" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M873 546H889M881 538V554" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="778" cy="641" r="20" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M768 641H788M778 631V651" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="929" cy="528" r="16" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M921 528H937M929 520V536" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="923" cy="445" r="20" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M913 445H933M923 435V455" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="810" cy="602" r="20" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M800 602H820M810 592V612" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="854" cy="572" r="20" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M844 572H864M854 562V582" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="873" cy="348" r="13" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="752" cy="335" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="915" cy="609" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="885" cy="443" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="738" cy="523" r="20" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M728 523H748M738 513V533" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="772" cy="583" r="20" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <path d="M762 583H782M772 573V593" stroke="#5b6a4a" stroke-width="1" opacity=".6"/>
+   <circle cx="848" cy="474" r="11" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="756" cy="443" r="16" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M748 443H764M756 435V451" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="715" cy="610" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="722" cy="417" r="11" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="927" cy="647" r="20" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M917 647H937M927 637V657" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="742" cy="374" r="20" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M732 374H752M742 364V384" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="738" cy="570" r="13" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="902" cy="338" r="16" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <path d="M894 338H910M902 330V346" stroke="#36432a" stroke-width="1" opacity=".6"/>
+   <circle cx="882" cy="622" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="738" cy="466" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="902" cy="410" r="16" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <path d="M894 410H910M902 402V418" stroke="#36432a" stroke-width="1" opacity=".6"/>
+   <circle cx="932" cy="333" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="791" cy="443" r="11" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="830" cy="505" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="846" cy="539" r="13" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="893" cy="581" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="818" cy="648" r="13" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="855" cy="450" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="811" cy="335" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="902" cy="377" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="819" cy="478" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="739" cy="600" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="913" cy="563" r="11" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="903" cy="514" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="844" cy="620" r="11" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="760" cy="490" r="13" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="725" cy="642" r="11" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="808" cy="554" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="858" cy="500" r="11" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="884" cy="641" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="777" cy="517" r="16" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <path d="M769 517H785M777 509V525" stroke="#5b6a4a" stroke-width="1" opacity=".6"/>
+   <circle cx="756" cy="614" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="386" cy="318" r="24" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M374 318H398M386 306V330" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="446" cy="322" r="20" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <path d="M436 322H456M446 312V332" stroke="#3f4d30" stroke-width="1" opacity=".6"/>
+   <circle cx="342" cy="309" r="13" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="471" cy="304" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="418" cy="299" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="643" cy="318" r="9" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="585" cy="306" r="11" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="528" cy="324" r="11" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="668" cy="292" r="20" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M658 292H678M668 282V302" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="620" cy="299" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="562" cy="308" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="601" cy="324" r="11" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="669" cy="330" r="13" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <circle cx="535" cy="299" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="572" cy="326" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="551" cy="330" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="257" cy="126" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="234" cy="161" r="24" fill="#55663f" stroke="#36432a" stroke-width="1.2"/>
+   <path d="M222 161H246M234 149V173" stroke="#36432a" stroke-width="1" opacity=".6"/>
+   <circle cx="286" cy="178" r="16" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M278 178H294M286 170V186" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="233" cy="79" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="231" cy="113" r="9" fill="#8a9a6a" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="289" cy="103" r="16" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <path d="M281 103H297M289 95V111" stroke="#4a5a38" stroke-width="1" opacity=".6"/>
+   <circle cx="275" cy="74" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="284" cy="134" r="11" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="258" cy="89" r="9" fill="#6f7f55" stroke="#4a5a38" stroke-width="1.2"/>
+   <circle cx="239" cy="61" r="9" fill="#7b8c64" stroke="#3f4d30" stroke-width="1.2"/>
+   <circle cx="294" cy="63" r="9" fill="#a3ae86" stroke="#5b6a4a" stroke-width="1.2"/>
+   <circle cx="300" cy="430" r="28" fill="#5f7048" stroke="#36432a" stroke-width="1.5" opacity=".92"/><circle cx="300" cy="430" r="3" fill="#36432a"/>
+   <circle cx="700" cy="430" r="28" fill="#5f7048" stroke="#36432a" stroke-width="1.5" opacity=".92"/><circle cx="700" cy="430" r="3" fill="#36432a"/>
+   <circle cx="330" cy="640" r="28" fill="#5f7048" stroke="#36432a" stroke-width="1.5" opacity=".92"/><circle cx="330" cy="640" r="3" fill="#36432a"/>
+   <circle cx="670" cy="640" r="28" fill="#5f7048" stroke="#36432a" stroke-width="1.5" opacity=".92"/><circle cx="670" cy="640" r="3" fill="#36432a"/>
+  </g>
+  <g id="L-build">
+   <rect x="330" y="190" width="340" height="100" fill="url(#pavers)" stroke="#36434b" stroke-width="2"/>
+   <rect x="480" y="290" width="40" height="130" fill="url(#pavers)" stroke="#36434b" stroke-width="1.5"/>
+   <path d="M330 270 C 230 300, 150 380, 170 470 S 230 600, 210 660" stroke="url(#gravel)" stroke-width="22" fill="none"/>
+   <path d="M330 270 C 230 300, 150 380, 170 470 S 230 600, 210 660" stroke="#a49c8c" stroke-width="24" fill="none" opacity=".25"/>
+   <rect x="755" y="350" width="130" height="90" fill="#7d9aa3" stroke="#36434b" stroke-width="2.5"/>
+   <path d="M770 380 q12 -5 24 0 t24 0 t24 0 t24 0" stroke="#dbe7ea" stroke-width="1.5" fill="none"/>
+   <path d="M300 590 A 230 120 0 0 0 700 590" stroke="#a49c8c" stroke-width="12" fill="none"/>
+   <ellipse cx="500" cy="520" rx="200" ry="100" fill="#9fae7f" stroke="#36434b" stroke-width="2"/>
+  </g>
+  <g id="L-care">
+   <g clip-path="url(#lawnclip)" stroke="#b5c296" stroke-width="18" opacity=".7"><path d="M290 430V620M326 430V620M362 430V620M398 430V620M434 430V620M470 430V620M506 430V620M542 430V620M578 430V620M614 430V620M650 430V620M686 430V620"/></g>
+   <g><circle cx="77" cy="465" r="2.6" fill="#c79a8d"/><circle cx="77" cy="466" r="2.6" fill="#c79a8d"/><circle cx="80" cy="463" r="2.6" fill="#c79a8d"/><circle cx="82" cy="417" r="2.6" fill="#d9b36c"/><circle cx="79" cy="418" r="2.6" fill="#d9b36c"/><circle cx="82" cy="416" r="2.6" fill="#d9b36c"/><circle cx="126" cy="310" r="2.6" fill="#b98fb0"/><circle cx="127" cy="305" r="2.6" fill="#b98fb0"/><circle cx="122" cy="305" r="2.6" fill="#b98fb0"/><circle cx="93" cy="444" r="2.6" fill="#c79a8d"/><circle cx="88" cy="445" r="2.6" fill="#c79a8d"/><circle cx="100" cy="446" r="2.6" fill="#c79a8d"/><circle cx="98" cy="295" r="2.6" fill="#c79a8d"/><circle cx="99" cy="294" r="2.6" fill="#c79a8d"/><circle cx="98" cy="295" r="2.6" fill="#c79a8d"/><circle cx="60" cy="310" r="2.6" fill="#d9b36c"/><circle cx="60" cy="305" r="2.6" fill="#d9b36c"/><circle cx="57" cy="312" r="2.6" fill="#d9b36c"/><circle cx="198" cy="308" r="2.6" fill="#b98fb0"/><circle cx="198" cy="309" r="2.6" fill="#b98fb0"/><circle cx="195" cy="309" r="2.6" fill="#b98fb0"/><circle cx="62" cy="484" r="2.6" fill="#b98fb0"/><circle cx="66" cy="488" r="2.6" fill="#b98fb0"/><circle cx="65" cy="485" r="2.6" fill="#b98fb0"/><circle cx="88" cy="601" r="2.6" fill="#d9b36c"/><circle cx="94" cy="604" r="2.6" fill="#d9b36c"/><circle cx="88" cy="602" r="2.6" fill="#d9b36c"/><circle cx="155" cy="277" r="2.6" fill="#c79a8d"/><circle cx="155" cy="276" r="2.6" fill="#c79a8d"/><circle cx="155" cy="276" r="2.6" fill="#c79a8d"/><circle cx="119" cy="248" r="2.6" fill="#b98fb0"/><circle cx="119" cy="249" r="2.6" fill="#b98fb0"/><circle cx="115" cy="250" r="2.6" fill="#b98fb0"/><circle cx="80" cy="576" r="2.6" fill="#b98fb0"/><circle cx="83" cy="578" r="2.6" fill="#b98fb0"/><circle cx="81" cy="576" r="2.6" fill="#b98fb0"/><circle cx="222" cy="334" r="2.6" fill="#d9b36c"/><circle cx="217" cy="335" r="2.6" fill="#d9b36c"/><circle cx="216" cy="332" r="2.6" fill="#d9b36c"/><circle cx="118" cy="387" r="2.6" fill="#c79a8d"/><circle cx="120" cy="388" r="2.6" fill="#c79a8d"/><circle cx="119" cy="394" r="2.6" fill="#c79a8d"/><circle cx="111" cy="276" r="2.6" fill="#e8e1d0"/><circle cx="113" cy="273" r="2.6" fill="#e8e1d0"/><circle cx="115" cy="276" r="2.6" fill="#e8e1d0"/><circle cx="65" cy="252" r="2.6" fill="#e8e1d0"/><circle cx="68" cy="251" r="2.6" fill="#e8e1d0"/><circle cx="64" cy="253" r="2.6" fill="#e8e1d0"/><circle cx="84" cy="496" r="2.6" fill="#e8e1d0"/><circle cx="87" cy="502" r="2.6" fill="#e8e1d0"/><circle cx="86" cy="501" r="2.6" fill="#e8e1d0"/><circle cx="237" cy="265" r="2.6" fill="#e8e1d0"/><circle cx="229" cy="261" r="2.6" fill="#e8e1d0"/><circle cx="231" cy="263" r="2.6" fill="#e8e1d0"/><circle cx="56" cy="445" r="2.6" fill="#d9b36c"/><circle cx="61" cy="452" r="2.6" fill="#d9b36c"/><circle cx="63" cy="449" r="2.6" fill="#d9b36c"/><circle cx="121" cy="605" r="2.6" fill="#d9b36c"/><circle cx="122" cy="605" r="2.6" fill="#d9b36c"/><circle cx="121" cy="606" r="2.6" fill="#d9b36c"/><circle cx="160" cy="311" r="2.6" fill="#d9b36c"/><circle cx="161" cy="307" r="2.6" fill="#d9b36c"/><circle cx="162" cy="305" r="2.6" fill="#d9b36c"/><circle cx="155" cy="255" r="2.6" fill="#d9b36c"/><circle cx="155" cy="255" r="2.6" fill="#d9b36c"/><circle cx="156" cy="253" r="2.6" fill="#d9b36c"/><circle cx="103" cy="323" r="2.6" fill="#c79a8d"/><circle cx="104" cy="321" r="2.6" fill="#c79a8d"/><circle cx="103" cy="323" r="2.6" fill="#c79a8d"/><circle cx="261" cy="289" r="2.6" fill="#b98fb0"/><circle cx="261" cy="286" r="2.6" fill="#b98fb0"/><circle cx="261" cy="294" r="2.6" fill="#b98fb0"/><circle cx="118" cy="578" r="2.6" fill="#c79a8d"/><circle cx="115" cy="577" r="2.6" fill="#c79a8d"/><circle cx="120" cy="576" r="2.6" fill="#c79a8d"/><circle cx="94" cy="479" r="2.6" fill="#d9b36c"/><circle cx="93" cy="480" r="2.6" fill="#d9b36c"/><circle cx="92" cy="479" r="2.6" fill="#d9b36c"/><circle cx="873" cy="602" r="2.6" fill="#c79a8d"/><circle cx="874" cy="595" r="2.6" fill="#c79a8d"/><circle cx="870" cy="603" r="2.6" fill="#c79a8d"/><circle cx="790" cy="492" r="2.6" fill="#e8e1d0"/><circle cx="789" cy="490" r="2.6" fill="#e8e1d0"/><circle cx="786" cy="489" r="2.6" fill="#e8e1d0"/><circle cx="794" cy="465" r="2.6" fill="#e8e1d0"/><circle cx="799" cy="463" r="2.6" fill="#e8e1d0"/><circle cx="794" cy="469" r="2.6" fill="#e8e1d0"/><circle cx="770" cy="544" r="2.6" fill="#e8e1d0"/><circle cx="772" cy="540" r="2.6" fill="#e8e1d0"/><circle cx="774" cy="545" r="2.6" fill="#e8e1d0"/><circle cx="751" cy="335" r="2.6" fill="#c79a8d"/><circle cx="752" cy="333" r="2.6" fill="#c79a8d"/><circle cx="753" cy="332" r="2.6" fill="#c79a8d"/><circle cx="880" cy="445" r="2.6" fill="#e8e1d0"/><circle cx="886" cy="440" r="2.6" fill="#e8e1d0"/><circle cx="886" cy="443" r="2.6" fill="#e8e1d0"/><circle cx="716" cy="614" r="2.6" fill="#e8e1d0"/><circle cx="714" cy="606" r="2.6" fill="#e8e1d0"/><circle cx="715" cy="610" r="2.6" fill="#e8e1d0"/><circle cx="720" cy="418" r="2.6" fill="#e8e1d0"/><circle cx="723" cy="419" r="2.6" fill="#e8e1d0"/><circle cx="727" cy="415" r="2.6" fill="#e8e1d0"/><circle cx="885" cy="620" r="2.6" fill="#b98fb0"/><circle cx="880" cy="622" r="2.6" fill="#b98fb0"/><circle cx="882" cy="622" r="2.6" fill="#b98fb0"/><circle cx="937" cy="331" r="2.6" fill="#d9b36c"/><circle cx="933" cy="334" r="2.6" fill="#d9b36c"/><circle cx="936" cy="334" r="2.6" fill="#d9b36c"/><circle cx="795" cy="444" r="2.6" fill="#e8e1d0"/><circle cx="794" cy="442" r="2.6" fill="#e8e1d0"/><circle cx="788" cy="445" r="2.6" fill="#e8e1d0"/><circle cx="831" cy="504" r="2.6" fill="#c79a8d"/><circle cx="832" cy="503" r="2.6" fill="#c79a8d"/><circle cx="829" cy="507" r="2.6" fill="#c79a8d"/><circle cx="895" cy="584" r="2.6" fill="#b98fb0"/><circle cx="892" cy="581" r="2.6" fill="#b98fb0"/><circle cx="888" cy="582" r="2.6" fill="#b98fb0"/><circle cx="811" cy="647" r="2.6" fill="#c79a8d"/><circle cx="816" cy="649" r="2.6" fill="#c79a8d"/><circle cx="818" cy="648" r="2.6" fill="#c79a8d"/><circle cx="857" cy="452" r="2.6" fill="#e8e1d0"/><circle cx="858" cy="453" r="2.6" fill="#e8e1d0"/><circle cx="853" cy="451" r="2.6" fill="#e8e1d0"/><circle cx="815" cy="336" r="2.6" fill="#b98fb0"/><circle cx="808" cy="334" r="2.6" fill="#b98fb0"/><circle cx="812" cy="334" r="2.6" fill="#b98fb0"/><circle cx="819" cy="484" r="2.6" fill="#b98fb0"/><circle cx="818" cy="475" r="2.6" fill="#b98fb0"/><circle cx="820" cy="483" r="2.6" fill="#b98fb0"/><circle cx="742" cy="597" r="2.6" fill="#e8e1d0"/><circle cx="739" cy="599" r="2.6" fill="#e8e1d0"/><circle cx="741" cy="596" r="2.6" fill="#e8e1d0"/><circle cx="915" cy="564" r="2.6" fill="#c79a8d"/><circle cx="910" cy="566" r="2.6" fill="#c79a8d"/><circle cx="911" cy="564" r="2.6" fill="#c79a8d"/><circle cx="902" cy="514" r="2.6" fill="#d9b36c"/><circle cx="904" cy="510" r="2.6" fill="#d9b36c"/><circle cx="905" cy="517" r="2.6" fill="#d9b36c"/><circle cx="843" cy="624" r="2.6" fill="#e8e1d0"/><circle cx="843" cy="620" r="2.6" fill="#e8e1d0"/><circle cx="847" cy="616" r="2.6" fill="#e8e1d0"/><circle cx="726" cy="640" r="2.6" fill="#d9b36c"/><circle cx="728" cy="641" r="2.6" fill="#d9b36c"/><circle cx="729" cy="642" r="2.6" fill="#d9b36c"/><circle cx="807" cy="557" r="2.6" fill="#d9b36c"/><circle cx="809" cy="552" r="2.6" fill="#d9b36c"/><circle cx="807" cy="551" r="2.6" fill="#d9b36c"/><circle cx="861" cy="497" r="2.6" fill="#e8e1d0"/><circle cx="861" cy="497" r="2.6" fill="#e8e1d0"/><circle cx="859" cy="500" r="2.6" fill="#e8e1d0"/><circle cx="880" cy="642" r="2.6" fill="#d9b36c"/><circle cx="883" cy="642" r="2.6" fill="#d9b36c"/><circle cx="880" cy="644" r="2.6" fill="#d9b36c"/><circle cx="756" cy="614" r="2.6" fill="#e8e1d0"/><circle cx="759" cy="609" r="2.6" fill="#e8e1d0"/><circle cx="758" cy="615" r="2.6" fill="#e8e1d0"/><circle cx="338" cy="308" r="2.6" fill="#d9b36c"/><circle cx="349" cy="306" r="2.6" fill="#d9b36c"/><circle cx="340" cy="310" r="2.6" fill="#d9b36c"/><circle cx="470" cy="303" r="2.6" fill="#b98fb0"/><circle cx="475" cy="305" r="2.6" fill="#b98fb0"/><circle cx="471" cy="305" r="2.6" fill="#b98fb0"/><circle cx="642" cy="318" r="2.6" fill="#e8e1d0"/><circle cx="647" cy="316" r="2.6" fill="#e8e1d0"/><circle cx="643" cy="318" r="2.6" fill="#e8e1d0"/><circle cx="589" cy="306" r="2.6" fill="#b98fb0"/><circle cx="582" cy="302" r="2.6" fill="#b98fb0"/><circle cx="587" cy="306" r="2.6" fill="#b98fb0"/><circle cx="528" cy="320" r="2.6" fill="#c79a8d"/><circle cx="529" cy="325" r="2.6" fill="#c79a8d"/><circle cx="524" cy="322" r="2.6" fill="#c79a8d"/><circle cx="618" cy="303" r="2.6" fill="#e8e1d0"/><circle cx="619" cy="299" r="2.6" fill="#e8e1d0"/><circle cx="623" cy="302" r="2.6" fill="#e8e1d0"/><circle cx="576" cy="330" r="2.6" fill="#d9b36c"/><circle cx="572" cy="324" r="2.6" fill="#d9b36c"/><circle cx="571" cy="326" r="2.6" fill="#d9b36c"/><circle cx="553" cy="334" r="2.6" fill="#c79a8d"/><circle cx="551" cy="329" r="2.6" fill="#c79a8d"/><circle cx="554" cy="334" r="2.6" fill="#c79a8d"/><circle cx="261" cy="122" r="2.6" fill="#b98fb0"/><circle cx="261" cy="129" r="2.6" fill="#b98fb0"/><circle cx="257" cy="125" r="2.6" fill="#b98fb0"/><circle cx="231" cy="111" r="2.6" fill="#b98fb0"/><circle cx="231" cy="113" r="2.6" fill="#b98fb0"/><circle cx="231" cy="118" r="2.6" fill="#b98fb0"/><circle cx="276" cy="77" r="2.6" fill="#b98fb0"/><circle cx="274" cy="69" r="2.6" fill="#b98fb0"/><circle cx="276" cy="76" r="2.6" fill="#b98fb0"/><circle cx="258" cy="88" r="2.6" fill="#d9b36c"/><circle cx="259" cy="88" r="2.6" fill="#d9b36c"/><circle cx="258" cy="89" r="2.6" fill="#d9b36c"/><circle cx="239" cy="61" r="2.6" fill="#c79a8d"/><circle cx="237" cy="59" r="2.6" fill="#c79a8d"/><circle cx="237" cy="59" r="2.6" fill="#c79a8d"/><circle cx="295" cy="63" r="2.6" fill="#c79a8d"/><circle cx="296" cy="64" r="2.6" fill="#c79a8d"/><circle cx="294" cy="64" r="2.6" fill="#c79a8d"/></g>
+   <g font-family="Jost,system-ui,sans-serif" font-size="12" letter-spacing="2.5" fill="#36434b">
+    <text x="500" y="526" text-anchor="middle">OPEN LAWN</text>
+    <text x="820" y="468" text-anchor="middle">WATER</text>
+    <text x="400" y="246" text-anchor="middle">TERRACE</text>
+   </g>
+  </g>
+  <g id="L-north" font-family="Jost,system-ui,sans-serif" font-size="12" letter-spacing="2" fill="#36434b">
+   <g transform="translate(930 80)"><circle r="20" fill="none" stroke="#36434b" stroke-width="1.2"/><path d="M0 -16 L6 6 L0 2 L-6 6 Z" fill="#36434b"/><text y="38" text-anchor="middle">N</text></g>
+  </g>
+ </defs>
+</svg>
+
+<header class="site">
+ <div class="wrap hd">
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#practice">Practice</a></li>
+    <li><a href="#journey">Process</a></li>
+    <li><a href="#aerial">Aerial</a></li>
+    <li><a href="#visit">Visit</a></li>
+    <li><a href="#contact">Enquire</a></li>
+   </ul>
+  </nav>
+  <a class="wordmark" href="#top">SITESCAPES<small>Landscape Design &middot; Stony Brook</small></a>
+  <div class="hd-r">
+   <a class="hd-tel" href="tel:+16313757519"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>(631) 375-7519</a>
+   <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<section class="cover" id="top">
+ <div class="wrap">
+  <div class="cover-top label"><span>Landscape architecture, design and construction</span><span>104 Christian Avenue, Stony Brook</span></div>
+  <div class="cover-grid">
+   <div>
+    <h1>Gardens drawn with care, <span>then built to the line.</span></h1>
+    <p class="dek">Sitescapes Landscape Design is a landscape architecture practice in Stony Brook. The same studio that draws the plan sees it through construction, for homes along the North Shore.</p>
+    <div class="cover-actions">
+     <a class="btn btn-moss" href="tel:+16313757519">Call (631) 375-7519</a>
+     <a class="btn btn-line" href="#contact">Arrange a site visit</a>
+    </div>
+   </div>
+   <figure class="plate">
+    <svg viewBox="20 20 960 660" role="img" aria-label="Illustrated landscape plan: a residence with a paved terrace, a central axis leading to an oval lawn, planted borders, a gravel walk, a water feature and existing trees.">
+     <use href="#L-site"/><use href="#L-build"/><use href="#L-plants"/><use href="#L-care"/><use href="#L-north"/>
+    </svg>
+    <figcaption><span>Plate I. A garden plan, illustrated</span><span>Not a client project</span></figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<section class="colophon" aria-label="At a glance">
+ <div class="wrap">
+  <div class="c"><span class="label">Google rating</span><div class="big-rate"><b>5.0</b><span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg></span></div></div>
+  <div class="c"><span class="label">Reviews</span><b>40 on Google</b></div>
+  <div class="c"><span class="label">Studio</span><b>Stony Brook</b></div>
+  <div class="c"><span class="label">Discipline</span><b>Landscape architect</b></div>
+ </div>
+</section>
+
+<section class="spread" id="practice">
+ <div class="wrap">
+  <div class="folio label"><span>The practice</span><span>01</span></div>
+  <div class="spread-grid">
+   <h2>One studio, from the first sketch to the last stone.</h2>
+   <p class="intro">Sitescapes is listed as a landscape architect offering both landscape design and construction. That pairing matters. The people who understand why a path bends are the ones who make sure it does.</p>
+   <article class="feature">
+    <span class="num">i.</span>
+    <h3>Landscape design</h3>
+    <p>Every plan starts with how the property already works: where the light falls, how water moves, which trees are worth keeping and how the family actually uses the yard. From there, the drawing sets out rooms, routes and planting so the garden reads as one composition rather than a collection of features.</p>
+    <ul>
+     <li>Site study <span>light, grade, existing trees</span></li>
+     <li>Master plan <span>layout and circulation</span></li>
+     <li>Planting design <span>a palette for the setting</span></li>
+    </ul>
+   </article>
+   <article class="feature">
+    <span class="num">ii.</span>
+    <h3>Landscape construction</h3>
+    <p>The plan is only as good as its installation. Construction carries the drawing into the ground: grading, hardscape, planting and the finishing details that decide whether a garden looks considered or merely completed. Keeping design and build together means fewer handoffs and fewer surprises.</p>
+    <ul>
+     <li>Hardscape <span>terraces, walks, walls</span></li>
+     <li>Planting <span>installed to the plan</span></li>
+     <li>First-season care <span>to discuss with the studio</span></li>
+    </ul>
+   </article>
+   <p class="pull">A garden should look as if it was always meant to be there.<small>The idea behind this concept</small></p>
+  </div>
+ </div>
+</section>
+
+<section class="journey" id="journey">
+ <div class="wrap">
+  <div class="folio label"><span>The design journey</span><span>02</span></div>
+  <div class="j-grid">
+   <div>
+    <span class="sample-tag">Sample tool</span>
+    <h2>Five steps, one drawing.</h2>
+    <p style="color:var(--muted)">Step through a typical project. The plan on the right gains a layer at each stage, the way a real drawing set builds up.</p>
+    <ol class="steps" id="steps">
+     <li><button type="button" data-step="0" aria-current="step"><span class="sn">1</span><span class="st">Site visit</span><span class="sd">Walk the property, note the light, grade, views and the trees worth keeping. The base plan records what is already there.</span></button></li>
+     <li><button type="button" data-step="1"><span class="sn">2</span><span class="st">Plan</span><span class="sd">Lay out rooms and routes: a terrace off the house, an axis to the lawn, a walk that takes the long way round.</span></button></li>
+     <li><button type="button" data-step="2"><span class="sn">3</span><span class="st">Plant palette</span><span class="sd">Choose trees, shrubs and perennials for structure and for each season, sized for how they will look in years, not weeks.</span></button></li>
+     <li><button type="button" data-step="3"><span class="sn">4</span><span class="st">Build</span><span class="sd">Grading, stone and water go in, then planting. The drawing becomes the garden.</span></button></li>
+     <li><button type="button" data-step="4"><span class="sn">5</span><span class="st">Season one care</span><span class="sd">The first growing season decides how well a garden settles in. Watering, edging and first blooms.</span></button></li>
+    </ol>
+    <div class="j-nav">
+     <button class="btn btn-line" type="button" id="jPrev">Back</button>
+     <button class="btn btn-moss" type="button" id="jNext">Next step</button>
+    </div>
+   </div>
+   <div class="j-plan">
+    <svg viewBox="20 20 960 660" role="img" aria-label="Garden plan that gains layers at each step of the design journey" id="jSvg">
+     <rect x="20" y="20" width="960" height="660" fill="#f7f4ee"/>
+     <use class="lyr" href="#L-site" data-from="0"/>
+     <use class="lyr" href="#L-plan" data-from="1" data-until="2"/>
+     <use class="lyr" href="#L-build" data-from="3"/>
+     <use class="lyr" href="#L-plants" data-from="2"/>
+     <use class="lyr" href="#L-care" data-from="4"/>
+     <use class="lyr" href="#L-north" data-from="0"/>
+    </svg>
+    <div class="meter" aria-hidden="true"><i id="jMeter" style="width:20%"></i></div>
+    <div class="j-cap"><span id="jCap">Sheet 1 of 5. Existing conditions</span><span>Illustrative</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="drone" id="aerial" aria-labelledby="drone-h">
+ <div class="wrap">
+  <div class="folio label" style="border-color:rgba(255,255,255,.5)"><span>Featured add-on in this concept</span><span>03</span></div>
+  <div class="d-head">
+   <div>
+    <span class="label">Drone aerial photos and video</span>
+    <h2 id="drone-h">Show the whole composition from above.</h2>
+   </div>
+   <div>
+    <p>A finished garden is designed in plan, so it reads best from the air. Aerial photos and a short flyover video let visitors see a project the way the studio drew it.</p>
+   </div>
+  </div>
+  <div class="viewport" id="viewport">
+   <svg class="ground" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect x="-500" y="-500" width="2000" height="1700" fill="#55673f"/><g stroke="#4b5c37" stroke-width="30" opacity=".6"><path d="M-500 -40H1500M-500 740H1500"/></g>
+    <g id="cam">
+     <use href="#L-site"/><use href="#L-build"/><use href="#L-plants"/><use href="#L-care"/>
+    </g>
+   </svg>
+   <div class="hud" aria-hidden="true">
+    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    <svg class="cross" viewBox="0 0 56 56"><circle cx="28" cy="28" r="10" fill="none" stroke="#fff" stroke-width="1.5"/><path d="M28 0v14M28 42v14M0 28h14M42 28h14" stroke="#fff" stroke-width="1.5"/></svg>
+    <div class="row1"><span class="rec" id="hRec">REC <span id="hTime">00:00</span></span><span class="hide-s">4K &middot; 30 FPS</span><span>SIMULATED VIEW</span></div>
+    <div class="row2"><span>ALT <span id="hAlt">120</span> FT</span><span>HDG <span id="hHdg">042</span>&deg;</span><span class="hide-s">SPD <span id="hSpd">6</span> MPH</span></div>
+   </div>
+  </div>
+  <div class="d-ctrl">
+   <button class="btn btn-light" type="button" id="dPause" aria-pressed="false">Pause flight</button>
+   <span class="label" style="color:#c7d0d4">Slow pan and zoom over an illustrated plan</span>
+  </div>
+  <div class="d-specs">
+   <div><span class="label" style="color:#b8c3c8">Price</span><div class="price">$550</div></div>
+   <div><b>Aerial stills</b><span>A set of finished-project photos from above, edited for the site</span></div>
+   <div><b>Flyover video</b><span>A short, slow pass over a project for the homepage or a gallery</span></div>
+   <div><b>Placed on the site</b><span>Built into the gallery and project pages, sized for phones</span></div>
+  </div>
+  <p class="sample-note">Sample feature. The aerial view above is a simulated camera moving over an illustrated plan. It is not drone footage and not a Sitescapes project. Real flights would follow local rules and the homeowner's permission.</p>
+ </div>
+</section>
+
+<section class="rating" aria-label="Google rating">
+ <div class="wrap">
+  <div class="folio label"><span>In the record</span><span>04</span></div>
+  <div class="r-num">5.0</div>
+  <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z" fill="#4a5a38"/></svg></div>
+  <p>A 5.0 rating across 40 Google reviews. On the live site, this space would hold a few client words chosen with the studio.</p>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <div class="wrap">
+  <div class="folio label"><span>Visit and hours</span><span>05</span></div>
+  <div class="v-grid">
+   <h2>The studio in Stony Brook.</h2>
+   <div class="v-cols">
+    <div>
+     <h3>Address</h3>
+     <p>104 Christian Avenue<br>Stony Brook, NY 11790</p>
+     <h3 style="margin-top:var(--s5)">Telephone</h3>
+     <a class="tel" href="tel:+16313757519">(631) 375-7519</a>
+    </div>
+    <div>
+     <h3>Hours</h3>
+     <table class="hours"><tbody>
+      <tr><td>Monday to Friday</td><td>Until 4 PM</td></tr>
+      <tr><td>Saturday and Sunday</td><td>Call for hours</td></tr>
+     </tbody></table>
+     <p style="margin-top:var(--s4)">To arrange a site visit, call or use the enquiry form.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="folio label"><span>Enquire</span><span>06</span></div>
+  <div class="c-grid">
+   <div>
+    <h2>Tell the studio about your property.</h2>
+    <p class="lede">A few lines about the place and what you hope for is plenty. The studio will follow up to arrange a site visit.</p>
+    <p class="lede">Or call <a href="tel:+16313757519">(631) 375-7519</a>, weekdays until 4 PM.</p>
+   </div>
+   <div>
+    <form class="form" data-demo data-done="done1" novalidate>
+     <div class="fgrid">
+      <div class="field"><label for="f-name">Name *</label><input id="f-name" required autocomplete="name"><span class="msg">Please add your name.</span></div>
+      <div class="field"><label for="f-phone">Phone *</label><input id="f-phone" type="tel" required autocomplete="tel"><span class="msg">Please add a phone number.</span></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email"><span class="msg">That email looks incomplete.</span></div>
+      <div class="field"><label for="f-town">Town *</label><input id="f-town" required><span class="msg">Which town is the property in?</span></div>
+      <fieldset class="field full"><legend>Interested in</legend>
+       <div class="chips">
+        <label><input type="checkbox" name="int" value="design">Landscape design</label>
+        <label><input type="checkbox" name="int" value="build">Construction</label>
+        <label><input type="checkbox" name="int" value="both">Design and build</label>
+        <label><input type="checkbox" name="int" value="unsure">Not sure yet</label>
+       </div>
+      </fieldset>
+      <div class="field full"><label for="f-msg">About the property *</label><textarea id="f-msg" required placeholder="Size, setting, what you would like to change"></textarea><span class="msg">A sentence or two helps the studio prepare.</span></div>
+     </div>
+     <button class="btn btn-moss" type="submit" style="margin-top:var(--s5)">Send enquiry</button>
+     <p class="demo-note">Demo form. This is a website concept. Nothing is sent or saved.</p>
+    </form>
+    <div class="done" id="done1" hidden tabindex="-1">
+     <h3>Demo complete.</h3>
+     <p>This is a website concept, so nothing was sent or saved. On the live site, the enquiry would reach the Sitescapes studio.</p>
+     <button class="btn btn-line restart" type="button">Start over</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="f-top">
+   <div><span class="wordmark">SITESCAPES</span><p style="margin-top:var(--s3)">Landscape Design Inc.<br>104 Christian Avenue, Stony Brook, NY 11790</p></div>
+   <div><h4>Telephone</h4><p><a href="tel:+16313757519">(631) 375-7519</a></p><p>Monday to Friday until 4 PM</p></div>
+   <div><h4>Pages</h4><p><a href="#practice">Practice</a></p><p><a href="#journey">Process</a></p><p><a href="#contact">Enquire</a></p></div>
+  </div>
+  <p class="disc">Independent website concept designed by Lisette Colon. Not affiliated with or approved by Sitescapes Landscape Design Inc. Address, hours, rating and review count are from the business's public Google listing, checked October 2026. Service details beyond "landscape design and construction" are illustrative, to confirm with the owner. The garden plan is an illustration, not a client project. The design journey tool, simulated drone view and enquiry form are sample features, and nothing entered here is sent or saved.</p>
+ </div>
+</footer>
+<a class="btn btn-moss sticky-call" href="tel:+16313757519">Call (631) 375-7519</a>
+
+<script>
+(function(){
+ const btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+ btn.addEventListener('click',()=>{const o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));nav.classList.toggle('open',!o)});
+ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{btn.setAttribute('aria-expanded','false');nav.classList.remove('open')}));
+
+ document.querySelectorAll('form[data-demo]').forEach(f=>{
+  const done=document.getElementById(f.dataset.done);
+  f.addEventListener('submit',e=>{
+   e.preventDefault();let first=null;
+   f.querySelectorAll('input:not([type=checkbox]),select,textarea').forEach(el=>{
+    const v=el.value.trim();let bad=el.required&&!v;
+    if(el.type==='email'&&v&&!/^\S+@\S+\.\S+$/.test(v))bad=true;
+    const fl=el.closest('.field');if(fl)fl.classList.toggle('err',bad);
+    el.setAttribute('aria-invalid',bad?'true':'false');
+    if(bad&&!first)first=el;
+   });
+   if(first){first.focus();return}
+   f.hidden=true;done.hidden=false;done.focus();
+  });
+  done.querySelector('.restart').addEventListener('click',()=>{f.reset();f.querySelectorAll('.err').forEach(x=>x.classList.remove('err'));f.hidden=false;done.hidden=true;f.querySelector('input').focus()});
+ });
+
+ // design journey
+ const caps=['Sheet 1 of 5. Existing conditions','Sheet 2 of 5. Layout plan','Sheet 3 of 5. Planting plan','Sheet 4 of 5. Construction','Sheet 5 of 5. First season'];
+ const sbtn=[...document.querySelectorAll('#steps button')],lyr=[...document.querySelectorAll('#jSvg .lyr')];
+ let cur=0;
+ function setStep(i){
+  cur=Math.max(0,Math.min(4,i));
+  sbtn.forEach((b,k)=>{if(k===cur)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');b.classList.toggle('past',k<cur)});
+  lyr.forEach(l=>{const from=+l.dataset.from,until=l.dataset.until!==undefined?+l.dataset.until:9;l.classList.toggle('on',cur>=from&&cur<=until)});
+  document.getElementById('jCap').textContent=caps[cur];
+  document.getElementById('jMeter').style.width=((cur+1)*20)+'%';
+  document.getElementById('jPrev').disabled=cur===0;
+  document.getElementById('jNext').textContent=cur===4?'Start again':'Next step';
+ }
+ sbtn.forEach(b=>b.addEventListener('click',()=>setStep(+b.dataset.step)));
+ document.getElementById('jPrev').addEventListener('click',()=>setStep(cur-1));
+ document.getElementById('jNext').addEventListener('click',()=>setStep(cur===4?0:cur+1));
+ setStep(0);
+
+ // drone
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const cam=document.getElementById('cam'),vp=document.getElementById('viewport'),pb=document.getElementById('dPause');
+ const hT=document.getElementById('hTime'),hA=document.getElementById('hAlt'),hH=document.getElementById('hHdg'),hS=document.getElementById('hSpd');
+ let t=0,last=null,playing=!reduce;
+ function frame(ts){
+  if(last===null)last=ts;const dt=Math.min(.05,(ts-last)/1000);last=ts;
+  if(playing)t+=dt;
+  const z=1.55+.35*Math.sin(t*.11);
+  const cx=500+230*Math.sin(t*.07),cy=360+150*Math.sin(t*.05+1);
+  const rot=8*Math.sin(t*.04);
+  cam.setAttribute('transform',`translate(500 350) scale(${z.toFixed(3)}) rotate(${rot.toFixed(2)}) translate(${(-cx).toFixed(1)} ${(-cy).toFixed(1)})`);
+  const s=Math.floor(t);hT.textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+  hA.textContent=Math.round(170-z*30);hH.textContent=String(Math.round((42+rot*4+360)%360)).padStart(3,'0');
+  hS.textContent=playing?Math.round(5+2*Math.abs(Math.cos(t*.07))):0;
+  requestAnimationFrame(frame);
+ }
+ requestAnimationFrame(frame);
+ function setPlay(p){playing=p;pb.setAttribute('aria-pressed',String(!p));pb.textContent=p?'Pause flight':'Resume flight';vp.classList.toggle('paused',!p)}
+ pb.addEventListener('click',()=>setPlay(!playing));
+ setPlay(playing);
+})();
+</script>
+</body>
+</html>
